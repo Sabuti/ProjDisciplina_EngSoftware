@@ -1,17 +1,17 @@
 import React from 'react';
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import { Toaster } from 'sonner';
-import { AuthProvider } from '@/contexts/AuthContext.jsx';
-import ScrollToTop from '@/components/ScrollToTop.jsx';
-import ProtectedRoute from '@/components/ProtectedRoute.jsx';
-import Header from '@/components/Header.jsx';
-import HomePage from '@/pages/HomePage.jsx';
-import LoginPage from '@/pages/LoginPage.jsx';
-import SignupPage from '@/pages/SignupPage.jsx';
-import AdminDashboard from '@/pages/AdminDashboard.jsx';
-import CoordenadorDashboard from '@/pages/CoordenadorDashboard.jsx';
-import AlunoDashboard from '@/pages/AlunoDashboard.jsx';
-import AIRecommendationPage from '@/pages/AIRecommendationPage.jsx';
+import { AuthProvider } from './contexts/AuthContext';
+import ScrollToTop from './components/ScrollToTop';
+import ProtectedRoute from './components/ProtectedRoute';
+import Header from './components/Header';
+import HomePage from './pages/HomePage';
+import LoginPage from './pages/LoginPage';
+import SignupPage from './pages/SignupPage';
+import AdminDashboard from './pages/AdminDashboard';
+import CoordenadorDashboard from './pages/CoordenadorDashboard';
+import AlunoDashboard from './pages/AlunoDashboard';
+import AIRecommendationPage from './pages/AIRecommendationPage';
 
 function App() {
   return (
