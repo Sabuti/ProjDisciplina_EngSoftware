@@ -6,6 +6,10 @@ import csvUploadRouter from './csv-upload.js';
 const router = Router();
 
 export default () => {
+    router.get('/', (req, res) => {
+        res.json({ status: 'ok' });
+    });
+
     router.get('/health', healthCheck);
     router.use('/integrated-ai', integratedAiRouter);
     router.use('/csv', csvUploadRouter);
